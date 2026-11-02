@@ -7,6 +7,7 @@ include(GNUInstallDirs)
 
 # Build options
 option(BUILD_DOC "Build documentation" OFF)
+option(CRCPP_USE_NAMESPACE "Use the ::CRCPP namespace" ON)
 
 # Header-only Library Target
 add_library(${PROJECT_NAME} INTERFACE)
@@ -24,6 +25,10 @@ target_include_directories(${PROJECT_NAME}
 
 # Propagates C++11 to users
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_11)
+
+if(CRCPP_USE_NAMESPACE)
+    target_compile_definitions(${PROJECT_NAME} INTERFACE CRCPP_USE_NAMESPACE)
+endif()
 
 # pkg-config configuration file
 configure_file(
