@@ -35,7 +35,7 @@
     @endparblock
 */
 
-#include "CRC.h"
+#include "CRCPP/CRC.h"
 
 #include <iomanip>  // Includes ::std::hex, ::std::setw
 #include <iostream> // Includes ::std::cerr, ::std::endl

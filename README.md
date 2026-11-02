@@ -42,8 +42,8 @@ Additionally, CRC++ has the most features of any library and the smallest code f
 Computing a CRC is as simple as the following code:
 
 ```cpp
-#include "CRC.h" // Only need to include this header file!
-                 // No libraries need to be included. No project settings need to be messed with.
+#include "CRCPP/CRC.h" // Only need to include this header file!
+                       // No libraries need to be included. No project settings need to be messed with.
 				 
 #include <iomanip>  // Includes ::std::hex
 #include <iostream> // Includes ::std::cout
